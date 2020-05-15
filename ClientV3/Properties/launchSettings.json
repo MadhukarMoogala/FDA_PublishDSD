@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "ClientV3": {
+      "commandName": "Project",
+      "commandLineArgs": "-i \"C:\\Users\\moogalm\\Downloads\\exported.zip\" -o D:\\Work\\Arxprojects\\2020\\BatchPublishCommand\\output",
+      "workingDirectory": "..\\bin\\Release\\netcoreapp3.1",
+      "environmentVariables": {
+        "FORGE_CLIENT_SECRET": "jqHRyW1BcPtGQcwp",
+        "FORGE_CLIENT_ID": "TahpeDJe69AxGGAnk4iBpBNvCJGuMskw"
+      }
+    }
+  }
+}

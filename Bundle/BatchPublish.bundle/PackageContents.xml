@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPackage
+    SchemaVersion="1.0"
+    Version="1.0"
+    ProductCode=""
+    HelpFile=""
+    Name="BatchPublishPackage"
+    Description="Batch Publish Creation Package"
+    Author="Madhukar Moogala" >
+  <CompanyDetails
+    Name="Autodesk, Inc"
+    Phone="415.555.5555"
+    Url="www.autodesk.com"
+    Email="madhukar.moogala@autodesk.com" />
+  <Components>
+    <RuntimeRequirements
+      OS="Win64"
+      Platform="AutoCAD" />
+    <ComponentEntry
+      AppName="JigsawPackage"
+      ModuleName="./Contents/BatchPublishCommand.dll"
+      AppDescription="Batch Publishing"
+      LoadOnCommandInvocation="True"
+      LoadOnAutoCADStartup="False">
+      <Commands GroupName="Commands">
+        <Command Global="BatchPublishCmd" Local="BatchPublishCmd" />
+      </Commands>
+    </ComponentEntry>
+  </Components>
+</ApplicationPackage>
+
