@@ -8,6 +8,14 @@ A CLI utility based on .NET Core technology to print a Revit generated multiple 
 
 Uses [Forge Design Automation V3](https://forge.autodesk.com/en/docs/design-automation/v3)
 
+### Design Automation
+
+![NotWorkInDA](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/NotWorkingInAcCoreConsole.gif)
+
+### AcCore
+![WorkingInAcCore](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/WorkingInAcCoreConsole.gif)
+
+
 ### Prerequisites
 1. **Forge Account**: Learn how to create a Forge Account, activate subscription and create an app at [this tutorial](http://learnforge.autodesk.io/#/account/). 
 2. **Visual Code**: Visual Code (Windows or MacOS)
