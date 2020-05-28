@@ -64,7 +64,12 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -88,8 +93,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-      xcopy $(TargetPath) $(ProjectDir)Bundle\BatchPublish.bundle\Contents /y
-      7z a -tzip $(ProjectDir)package.zip "$(ProjectDir)Bundle\*"</PostBuildEvent>
+    <PostBuildEvent>xcopy $(TargetDir)*.dll $(ProjectDir)Bundle\BatchPublish.bundle\Contents /y
+7z a -tzip $(ProjectDir)package.zip "$(ProjectDir)Bundle\*"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>

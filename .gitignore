@@ -18,6 +18,8 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+forgenv.bat
+
 # Mono auto generated files
 mono_crash.*
 

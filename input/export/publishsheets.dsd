@@ -1,0 +1,127 @@
+[DWF6Version]
+Ver=1
+[DWF6MinorVersion]
+MinorVer=1
+[DWF6Sheet:DA4R-Sheet - A001 - Title Sheet-Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A001 - Title Sheet.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A001 - Title Sheet.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A001 - Title Sheet-Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A001 - Title Sheet.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A001 - Title Sheet.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A101 - Site Plan-Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A101 - Site Plan.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A101 - Site Plan.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A101 - Site Plan-Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A101 - Site Plan.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A101 - Site Plan.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A102 - Plans-Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A102 - Plans.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A102 - Plans.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A102 - Plans-Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A102 - Plans.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A102 - Plans.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A103 - Elevations-Sections-Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A103 - Elevations-Sections.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A103 - Elevations-Sections.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A103 - Elevations-Sections-Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A103 - Elevations-Sections.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A103 - Elevations-Sections.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A104 - Elev--Sec--Det--Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A104 - Elev--Sec--Det-.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A104 - Elev--Sec--Det-.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A104 - Elev--Sec--Det--Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A104 - Elev--Sec--Det-.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A104 - Elev--Sec--Det-.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A105 - Elev-- Stair Sections-Layout1]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A105 - Elev-- Stair Sections.dwg"
+Layout=Layout1
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A105 - Elev-- Stair Sections.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[DWF6Sheet:DA4R-Sheet - A105 - Elev-- Stair Sections-Layout2]
+DWG="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A105 - Elev-- Stair Sections.dwg"
+Layout=Layout2
+Setup=
+OriginalSheetPath="C:\Users\moogalm\Downloads\exported (3)\DA4R-Sheet - A105 - Elev-- Stair Sections.dwg"
+Has Plot Port=0
+Has3DDWF=0
+[Target]
+Type=6
+DWF="C:\Users\moogalm\Documents\DA4R-Sheet - A001 - Title Sheet.dwfx
+OUT="C:\Users\moogalm\Documents\
+PWD=
+[MRU Sheet List]
+MRU=0
+[PdfOptions]
+IncludeHyperlinks=TRUE
+CreateBookmarks=TRUE
+CaptureFontsInDrawing=TRUE
+ConvertTextToGeometry=FALSE
+VectorResolution=600
+RasterResolution=400
+[AutoCAD Block Data]
+IncludeBlockInfo=0
+BlockTmplFilePath=
+[SheetSet Properties]
+IsSheetSet=FALSE
+IsHomogeneous=FALSE
+SheetSet Name=
+NoOfCopies=1
+PlotStampOn=FALSE
+ViewFile=FALSE
+JobID=0
+SelectionSetName=
+AcadProfile=<<Unnamed Profile>>
+CategoryName=
+LogFilePath=
+IncludeLayer=TRUE
+LineMerge=FALSE
+CurrentPrecision=
+PromptForDwfName=FALSE
+PwdProtectPublishedDWF=FALSE
+PromptForPwd=FALSE
+RepublishingMarkups=FALSE
+PublishSheetSetMetadata=FALSE
+PublishSheetMetadata=FALSE
+3DDWFOptions=0 1

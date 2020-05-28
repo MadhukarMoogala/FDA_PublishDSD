@@ -1,4 +1,4 @@
-[05/15/2020 17:21:04] Job information:
+[05/28/2020 16:47:18] Job information:
 "CommandLine":[
   "$(engine.path)\\accoreconsole.exe /i $(args[inputFile].path) /al $(appbundles[Adsk_BatchPublish_v3].path) /s $(settings[script].path)"
 ]
@@ -11,11 +11,11 @@
     "isEnvironmentVariable": true
   }
 }
-"Id":"babe1312100e4ad3adf68811ace4b1e4"
+"Id":"67334de1fd81458887e4db941b66088e"
 "ActivityId":"moogalm.Adsk_BatchPublish_v3+prod"
 "Engine.Id":"Autodesk.AutoCAD!25"
 "Apps": [
-"App.Id":"moogalm.Adsk_BatchPublish_v3!14"
+"App.Id":"moogalm.Adsk_BatchPublish_v3!19"
 ]
 "BoundArguments":{
   "inputFile": {
@@ -25,14 +25,11 @@
   "inputZip": {
     "zip": true,
     "localName": "export",
-    "url": "https://developer.api.autodesk.com/Masked:4AKnEI5R1aBSraQyhyQHHInqucA="
+    "url": "https://developer.api.autodesk.com/Masked:mfTVil7tVTxuWd7hX7rBMZIhFnU="
   },
   "Result": {
     "localName": "result.pdf",
-    "url": "https://developer.api.autodesk.com/Masked:JXMsBqfwU4XTq9XbLGNTiXBb/OQ=",
-    "headers": {
-      "Authorization": "Masked:Zdnj9dqRGPI6Ywv8MaIQX2bYMWo="
-    },
+    "url": "https://developer.api.autodesk.com/Masked:c3VEcis+kFNbCM9PKjJAIha+rK8=",
     "verb": "put"
   },
   "onProgress": {
@@ -41,7 +38,7 @@
     "headers": {
       "Content-Type": "application/json",
       "x-das-authorize": "awssigv4(us-east-1)",
-      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"},\"scope\":\"code:all\",\"expires_in\":3593,\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"}"
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"},\"scope\":\"code:all\",\"expires_in\":3595,\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"}"
     },
     "verb": "put"
   }
@@ -54,174 +51,175 @@
   "limitProcessingTimeSec": 100,
   "limitTotalUncompressedAppsSizeInMB": 500
 }
-[05/15/2020 17:21:04] Starting work item babe1312100e4ad3adf68811ace4b1e4
-[05/15/2020 17:21:04] Start preparing AppPackage Adsk_BatchPublish_v3.
-[05/15/2020 17:21:04] Download bits and install app to local cache.
-[05/15/2020 17:21:04] Start download phase.
-[05/15/2020 17:21:04] Start downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt.
-[05/15/2020 17:21:04] Start downloading file https://developer.api.autodesk.com/oss/v2/signedresources/847ff222-893c-497a-aae9-021d7d64048b?region=US.
-[05/15/2020 17:21:04] End downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt. 31419 bytes have been written to T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\acad.dwt.
-[05/15/2020 17:21:06] End downloading https://developer.api.autodesk.com/oss/v2/signedresources/847ff222-893c-497a-aae9-021d7d64048b?region=US. 4778961 bytes have been unpacked to folder T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export.
-[05/15/2020 17:21:06] End download phase.
-[05/15/2020 17:21:06] Start preparing script and command line parameters.
-[05/15/2020 17:21:06] Command line: [ /i T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\acad.dwt /al T:\Aces\Applications\51d356be5eca8c9d6b98323ac6049905.moogalm.Adsk_BatchPublish_v3[14].package /s T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\setting_script.scr]
-[05/15/2020 17:21:06] End preparing script and command line parameters.
-[05/15/2020 17:21:06] Start script phase.
-[05/15/2020 17:21:06] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_babe1312100e4ad3adf68811ace4b1e4 "T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\userdata" /exe "T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\acad.dwt /al T:\Aces\Applications\51d356be5eca8c9d6b98323ac6049905.moogalm.Adsk_BatchPublish_v3[14].package /s T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\setting_script.scr.
-[05/15/2020 17:21:06] Start AutoCAD Core Engine standard output dump.
-[05/15/2020 17:21:06] Redirect stdout (file: T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\tmp\accc36522).
-[05/15/2020 17:21:06] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
-[05/15/2020 17:21:06] AutoCAD Core Engine Console - Copyright 2019 Autodesk, Inc.  All rights reserved. (Q.48.Z.11)
-[05/15/2020 17:21:06] Execution Path:
-[05/15/2020 17:21:06] T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe
-[05/15/2020 17:21:06] Current Directory: T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4
-[05/15/2020 17:21:06] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_babe1312100e4ad3adf68811ace4b1e4, userDataFolder=T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\userdata.
-[05/15/2020 17:21:07] Version Number: Q.48.Z.11 (UNICODE)
-[05/15/2020 17:21:08] Regenerating model.
-[05/15/2020 17:21:08] Command:
-[05/15/2020 17:21:08] Command:
-[05/15/2020 17:21:08] Command:
-[05/15/2020 17:21:08] Command: BatchPublishCmd
-[05/15/2020 17:21:08]  Current Directory T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4
-[05/15/2020 17:21:08]  Exported drawings are found here T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export
-[05/15/2020 17:21:08]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A001-TitleSheet.dwg
-[05/15/2020 17:21:08]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A101-SitePlan.dwg
-[05/15/2020 17:21:08]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A102-Plans.dwg
-[05/15/2020 17:21:08]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A103-Elevations-Sections.dwg
-[05/15/2020 17:21:08]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A104-Elev--Sec--Det-.dwg
-[05/15/2020 17:21:09] Regenerating layout.
-[05/15/2020 17:21:09] Regenerating model.
-[05/15/2020 17:21:10] Command:
-[05/15/2020 17:21:10] Command: Effective plotting area:  210.00 wide by 296.97 high
-[05/15/2020 17:21:10] Effective plotting area:  86.87 wide by 159.09 high
-[05/15/2020 17:21:10] Plotting viewport 2.
-[05/15/2020 17:21:10] Effective plotting area:  38.73 wide by 70.99 high
-[05/15/2020 17:21:10] Plotting viewport 3.
-[05/15/2020 17:21:10] Effective plotting area:  38.90 wide by 71.04 high
-[05/15/2020 17:21:10] Plotting viewport 4.
-[05/15/2020 17:21:10] Effective plotting area:  38.95 wide by 71.04 high
-[05/15/2020 17:21:10] Plotting viewport 5.
-[05/15/2020 17:21:10] Effective plotting area:  38.90 wide by 71.04 high
-[05/15/2020 17:21:10] Plotting viewport 6.
-[05/15/2020 17:21:10] Plotting viewport 1.
-[05/15/2020 17:21:10] Regenerating layout.
-[05/15/2020 17:21:10] Regenerating model.
-[05/15/2020 17:21:10] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:10] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:10] Plotting viewport 2.
-[05/15/2020 17:21:10] Plotting viewport 1.
-[05/15/2020 17:21:10] Regenerating layout.
-[05/15/2020 17:21:10] Regenerating model.
-[05/15/2020 17:21:11] Command:
-[05/15/2020 17:21:11] Command: Regenerating layout.
-[05/15/2020 17:21:11] Regenerating model.
-[05/15/2020 17:21:11] Effective plotting area:  210.00 wide by 281.26 high
-[05/15/2020 17:21:11] Effective plotting area:  154.52 wide by 159.64 high
-[05/15/2020 17:21:11] Plotting viewport 2.
-[05/15/2020 17:21:11] Effective plotting area:  95.17 wide by 140.33 high
-[05/15/2020 17:21:11] Plotting viewport 3.
-[05/15/2020 17:21:11] Plotting viewport 1.
-[05/15/2020 17:21:11] Regenerating layout.
-[05/15/2020 17:21:11] Regenerating model.
-[05/15/2020 17:21:11] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:11] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:11] Plotting viewport 2.
-[05/15/2020 17:21:12] Plotting viewport 1.
-[05/15/2020 17:21:12] Regenerating layout.
-[05/15/2020 17:21:12] Regenerating model.
-[05/15/2020 17:21:12] Command:
-[05/15/2020 17:21:12] Command: Regenerating layout.
-[05/15/2020 17:21:12] Regenerating model.
-[05/15/2020 17:21:12] Effective plotting area:  210.00 wide by 296.97 high
-[05/15/2020 17:21:12] Effective plotting area:  115.15 wide by 136.74 high
-[05/15/2020 17:21:12] Plotting viewport 2.
-[05/15/2020 17:21:12] Effective plotting area:  93.51 wide by 99.61 high
-[05/15/2020 17:21:12] Plotting viewport 3.
-[05/15/2020 17:21:12] Plotting viewport 1.
-[05/15/2020 17:21:13] Regenerating layout.
-[05/15/2020 17:21:13] Regenerating model.
-[05/15/2020 17:21:13] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:13] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:13] Plotting viewport 2.
-[05/15/2020 17:21:13] Plotting viewport 1.
-[05/15/2020 17:21:13] Regenerating layout.
-[05/15/2020 17:21:13] Regenerating model.
-[05/15/2020 17:21:13] Command:
-[05/15/2020 17:21:13] Command: Regenerating layout.
-[05/15/2020 17:21:13] Regenerating model.
-[05/15/2020 17:21:13] Effective plotting area:  210.00 wide by 296.97 high
-[05/15/2020 17:21:13] Effective plotting area:  57.32 wide by 185.17 high
-[05/15/2020 17:21:13] Plotting viewport 2.
-[05/15/2020 17:21:13] Effective plotting area:  74.59 wide by 152.23 high
-[05/15/2020 17:21:13] Plotting viewport 3.
-[05/15/2020 17:21:14] Plotting viewport 1.
-[05/15/2020 17:21:14] Regenerating layout.
-[05/15/2020 17:21:14] Regenerating model.
-[05/15/2020 17:21:14] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:14] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:14] Plotting viewport 2.
-[05/15/2020 17:21:14] Plotting viewport 1.
-[05/15/2020 17:21:14] Regenerating layout.
-[05/15/2020 17:21:14] Regenerating model.
-[05/15/2020 17:21:14] Command:
-[05/15/2020 17:21:14] Command: Regenerating layout.
-[05/15/2020 17:21:14] Effective plotting area:  210.00 wide by 296.97 high
-[05/15/2020 17:21:14] Effective plotting area:  55.92 wide by 181.31 high
-[05/15/2020 17:21:14] Plotting viewport 2.
-[05/15/2020 17:21:14] Effective plotting area:  58.29 wide by 190.12 high
-[05/15/2020 17:21:14] Plotting viewport 3.
-[05/15/2020 17:21:15] Effective plotting area:  164.72 wide by 40.47 high
-[05/15/2020 17:21:15] Plotting viewport 4.
-[05/15/2020 17:21:15] Effective plotting area:  41.61 wide by 44.24 high
-[05/15/2020 17:21:15] Plotting viewport 5.
-[05/15/2020 17:21:15] Effective plotting area:  42.67 wide by 53.26 high
-[05/15/2020 17:21:15] Plotting viewport 6.
-[05/15/2020 17:21:15] Effective plotting area:  40.64 wide by 52.20 high
-[05/15/2020 17:21:15] Plotting viewport 7.
-[05/15/2020 17:21:15] Plotting viewport 1.
-[05/15/2020 17:21:15] Regenerating layout.
-[05/15/2020 17:21:15] Regenerating model.
-[05/15/2020 17:21:15] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:15] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:15] Plotting viewport 2.
-[05/15/2020 17:21:15] Plotting viewport 1.
-[05/15/2020 17:21:15] Regenerating layout.
-[05/15/2020 17:21:15] Regenerating model.
-[05/15/2020 17:21:15] Command:
-[05/15/2020 17:21:15] Command: Regenerating layout.
-[05/15/2020 17:21:15] Regenerating model.
-[05/15/2020 17:21:16] Effective plotting area:  210.00 wide by 296.97 high
-[05/15/2020 17:21:16] Effective plotting area:  104.27 wide by 88.82 high
-[05/15/2020 17:21:16] Plotting viewport 2.
-[05/15/2020 17:21:16] Effective plotting area:  51.90 wide by 162.73 high
-[05/15/2020 17:21:16] Plotting viewport 3.
-[05/15/2020 17:21:16] Effective plotting area:  95.88 wide by 146.39 high
-[05/15/2020 17:21:16] Plotting viewport 4.
-[05/15/2020 17:21:16] Plotting viewport 1.
-[05/15/2020 17:21:16] Regenerating layout.
-[05/15/2020 17:21:16] Regenerating model.
-[05/15/2020 17:21:16] Effective plotting area:  210.00 wide by 297.00 high
-[05/15/2020 17:21:16] Effective plotting area:  160.10 wide by 229.83 high
-[05/15/2020 17:21:16] Plotting viewport 2.
-[05/15/2020 17:21:16] Plotting viewport 1.
-[05/15/2020 17:21:16]  Drawing to be plotted T:\Aces\Jobs\babe1312100e4ad3adf68811ace4b1e4\export\DA4R-Sheet-A105-Elev--StairSections.dwg
-[05/15/2020 17:21:17] End AutoCAD Core Engine standard output dump.
-[05/15/2020 17:21:17] End script phase.
-[05/15/2020 17:21:17] Start upload phase.
-[05/15/2020 17:21:17] Error: Non-optional output [result.pdf] is missing.
-[05/15/2020 17:21:17] Error: An unexpected error happened during phase Publishing of job.
-[05/15/2020 17:21:17] Job finished with result FailedMissingOutput
-[05/15/2020 17:21:17] Job Status:
+[05/28/2020 16:47:18] Starting work item 67334de1fd81458887e4db941b66088e
+[05/28/2020 16:47:18] Start download phase.
+[05/28/2020 16:47:18] Start downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt.
+[05/28/2020 16:47:18] Start downloading file https://developer.api.autodesk.com/oss/v2/signedresources/ebdaf238-d949-44af-ab33-bf13c21e1bf7?region=US.
+[05/28/2020 16:47:18] Start preparing AppPackage Adsk_BatchPublish_v3.
+[05/28/2020 16:47:18] Download bits and install app to local cache.
+[05/28/2020 16:47:18] End downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt. 31419 bytes have been written to T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt.
+[05/28/2020 16:47:18] End downloading https://developer.api.autodesk.com/oss/v2/signedresources/ebdaf238-d949-44af-ab33-bf13c21e1bf7?region=US. 4778961 bytes have been unpacked to folder T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export.
+[05/28/2020 16:47:18] End download phase.
+[05/28/2020 16:47:19] Start preparing script and command line parameters.
+[05/28/2020 16:47:19] Command line: [ /i T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt /al T:\Aces\Applications\646dad251f8a39cb9c7a0ab40f93b791.moogalm.Adsk_BatchPublish_v3[19].package /s T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\setting_script.scr]
+[05/28/2020 16:47:19] End preparing script and command line parameters.
+[05/28/2020 16:47:20] Start script phase.
+[05/28/2020 16:47:20] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_67334de1fd81458887e4db941b66088e "T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\userdata" /exe "T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt /al T:\Aces\Applications\646dad251f8a39cb9c7a0ab40f93b791.moogalm.Adsk_BatchPublish_v3[19].package /s T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\setting_script.scr.
+[05/28/2020 16:47:20] Start AutoCAD Core Engine standard output dump.
+[05/28/2020 16:47:20] Redirect stdout (file: T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\tmp\accc30282).
+[05/28/2020 16:47:20] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[05/28/2020 16:47:20] AutoCAD Core Engine Console - Copyright 2019 Autodesk, Inc.  All rights reserved. (Q.48.Z.11)
+[05/28/2020 16:47:20] Execution Path:
+[05/28/2020 16:47:20] T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe
+[05/28/2020 16:47:20] Current Directory: T:\Aces\Jobs\67334de1fd81458887e4db941b66088e
+[05/28/2020 16:47:20] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_67334de1fd81458887e4db941b66088e, userDataFolder=T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\userdata.
+[05/28/2020 16:47:20] Version Number: Q.48.Z.11 (UNICODE)
+[05/28/2020 16:47:21] Regenerating model.
+[05/28/2020 16:47:21] Command:
+[05/28/2020 16:47:21] Command:
+[05/28/2020 16:47:21] Command:
+[05/28/2020 16:47:21] Command: BatchPublishCmd
+[05/28/2020 16:47:21]  Current Directory T:\Aces\Jobs\67334de1fd81458887e4db941b66088e
+[05/28/2020 16:47:21]  Exported drawings are found here T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export
+[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A001-TitleSheet.dwg
+[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A101-SitePlan.dwg
+[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A102-Plans.dwg
+[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A103-Elevations-Sections.dwg
+[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A104-Elev--Sec--Det-.dwg
+[05/28/2020 16:47:22] Regenerating layout.
+[05/28/2020 16:47:22] Regenerating model.
+[05/28/2020 16:47:23] Command:
+[05/28/2020 16:47:23] Command: Effective plotting area:  210.00 wide by 296.97 high
+[05/28/2020 16:47:23] Effective plotting area:  86.87 wide by 159.09 high
+[05/28/2020 16:47:23] Plotting viewport 2.
+[05/28/2020 16:47:23] Effective plotting area:  38.73 wide by 70.99 high
+[05/28/2020 16:47:23] Plotting viewport 3.
+[05/28/2020 16:47:23] Effective plotting area:  38.90 wide by 71.04 high
+[05/28/2020 16:47:23] Plotting viewport 4.
+[05/28/2020 16:47:23] Effective plotting area:  38.95 wide by 71.04 high
+[05/28/2020 16:47:23] Plotting viewport 5.
+[05/28/2020 16:47:23] Effective plotting area:  38.90 wide by 71.04 high
+[05/28/2020 16:47:23] Plotting viewport 6.
+[05/28/2020 16:47:23] Plotting viewport 1.
+[05/28/2020 16:47:23] Regenerating layout.
+[05/28/2020 16:47:23] Regenerating model.
+[05/28/2020 16:47:23] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:23] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:23] Plotting viewport 2.
+[05/28/2020 16:47:23] Plotting viewport 1.
+[05/28/2020 16:47:24] Regenerating layout.
+[05/28/2020 16:47:24] Regenerating model.
+[05/28/2020 16:47:24] Command:
+[05/28/2020 16:47:24] Command: Regenerating layout.
+[05/28/2020 16:47:24] Regenerating model.
+[05/28/2020 16:47:24] Effective plotting area:  210.00 wide by 281.26 high
+[05/28/2020 16:47:24] Effective plotting area:  154.52 wide by 159.64 high
+[05/28/2020 16:47:24] Plotting viewport 2.
+[05/28/2020 16:47:24] Effective plotting area:  95.17 wide by 140.33 high
+[05/28/2020 16:47:24] Plotting viewport 3.
+[05/28/2020 16:47:24] Plotting viewport 1.
+[05/28/2020 16:47:24] Regenerating layout.
+[05/28/2020 16:47:24] Regenerating model.
+[05/28/2020 16:47:24] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:24] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:24] Plotting viewport 2.
+[05/28/2020 16:47:25] Plotting viewport 1.
+[05/28/2020 16:47:25] Regenerating layout.
+[05/28/2020 16:47:25] Regenerating model.
+[05/28/2020 16:47:25] Command:
+[05/28/2020 16:47:25] Command: Regenerating layout.
+[05/28/2020 16:47:25] Regenerating model.
+[05/28/2020 16:47:25] Effective plotting area:  210.00 wide by 296.97 high
+[05/28/2020 16:47:25] Effective plotting area:  115.15 wide by 136.74 high
+[05/28/2020 16:47:25] Plotting viewport 2.
+[05/28/2020 16:47:25] Effective plotting area:  93.51 wide by 99.61 high
+[05/28/2020 16:47:25] Plotting viewport 3.
+[05/28/2020 16:47:25] Plotting viewport 1.
+[05/28/2020 16:47:25] Regenerating layout.
+[05/28/2020 16:47:25] Regenerating model.
+[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:26] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:26] Plotting viewport 2.
+[05/28/2020 16:47:26] Plotting viewport 1.
+[05/28/2020 16:47:26] Regenerating layout.
+[05/28/2020 16:47:26] Regenerating model.
+[05/28/2020 16:47:26] Command:
+[05/28/2020 16:47:26] Command: Regenerating layout.
+[05/28/2020 16:47:26] Regenerating model.
+[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 296.97 high
+[05/28/2020 16:47:26] Effective plotting area:  57.32 wide by 185.17 high
+[05/28/2020 16:47:26] Plotting viewport 2.
+[05/28/2020 16:47:26] Effective plotting area:  74.59 wide by 152.23 high
+[05/28/2020 16:47:26] Plotting viewport 3.
+[05/28/2020 16:47:26] Plotting viewport 1.
+[05/28/2020 16:47:26] Regenerating layout.
+[05/28/2020 16:47:26] Regenerating model.
+[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:26] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:26] Plotting viewport 2.
+[05/28/2020 16:47:27] Plotting viewport 1.
+[05/28/2020 16:47:27] Regenerating layout.
+[05/28/2020 16:47:27] Regenerating model.
+[05/28/2020 16:47:27] Command:
+[05/28/2020 16:47:27] Command: Regenerating layout.
+[05/28/2020 16:47:27] Effective plotting area:  210.00 wide by 296.97 high
+[05/28/2020 16:47:27] Effective plotting area:  55.92 wide by 181.31 high
+[05/28/2020 16:47:27] Plotting viewport 2.
+[05/28/2020 16:47:27] Effective plotting area:  58.29 wide by 190.12 high
+[05/28/2020 16:47:27] Plotting viewport 3.
+[05/28/2020 16:47:27] Effective plotting area:  164.72 wide by 40.47 high
+[05/28/2020 16:47:27] Plotting viewport 4.
+[05/28/2020 16:47:27] Effective plotting area:  41.61 wide by 44.24 high
+[05/28/2020 16:47:27] Plotting viewport 5.
+[05/28/2020 16:47:27] Effective plotting area:  42.67 wide by 53.26 high
+[05/28/2020 16:47:27] Plotting viewport 6.
+[05/28/2020 16:47:27] Effective plotting area:  40.64 wide by 52.20 high
+[05/28/2020 16:47:27] Plotting viewport 7.
+[05/28/2020 16:47:27] Plotting viewport 1.
+[05/28/2020 16:47:27] Regenerating layout.
+[05/28/2020 16:47:27] Regenerating model.
+[05/28/2020 16:47:27] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:28] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:28] Plotting viewport 2.
+[05/28/2020 16:47:28] Plotting viewport 1.
+[05/28/2020 16:47:28] Regenerating layout.
+[05/28/2020 16:47:28] Regenerating model.
+[05/28/2020 16:47:28] Command:
+[05/28/2020 16:47:28] Command: Regenerating layout.
+[05/28/2020 16:47:28] Regenerating model.
+[05/28/2020 16:47:28] Effective plotting area:  210.00 wide by 296.97 high
+[05/28/2020 16:47:28] Effective plotting area:  104.27 wide by 88.82 high
+[05/28/2020 16:47:28] Plotting viewport 2.
+[05/28/2020 16:47:28] Effective plotting area:  51.90 wide by 162.73 high
+[05/28/2020 16:47:28] Plotting viewport 3.
+[05/28/2020 16:47:28] Effective plotting area:  95.88 wide by 146.39 high
+[05/28/2020 16:47:28] Plotting viewport 4.
+[05/28/2020 16:47:28] Plotting viewport 1.
+[05/28/2020 16:47:28] Regenerating layout.
+[05/28/2020 16:47:28] Regenerating model.
+[05/28/2020 16:47:28] Effective plotting area:  210.00 wide by 297.00 high
+[05/28/2020 16:47:28] Effective plotting area:  160.10 wide by 229.83 high
+[05/28/2020 16:47:28] Plotting viewport 2.
+[05/28/2020 16:47:29] Plotting viewport 1.
+[05/28/2020 16:47:29]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A105-Elev--StairSections.dwg
+[05/28/2020 16:47:30] End AutoCAD Core Engine standard output dump.
+[05/28/2020 16:47:30] End script phase.
+[05/28/2020 16:47:30] Start upload phase.
+[05/28/2020 16:47:30] Uploading T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\result.pdf to https://developer.api.autodesk.com/oss/v2/signedresources/dbf09aee-75c6-46ef-861a-8c97732c994a?region=US.
+[05/28/2020 16:47:30] End upload phase.
+[05/28/2020 16:47:30] Job finished with result Succeeded
+[05/28/2020 16:47:30] Job Status:
 {
-  "status": "failedInstructions",
-  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/moogalm/babe1312100e4ad3adf68811ace4b1e4/report.txt?AWSAccessKeyId=ASIATGVJZKM3M6LV4ZF6&Expires=1589566964&x-amz-security-token=IQoJb3JpZ2luX2VjEEgaCXVzLWVhc3QtMSJIMEYCIQDoLEPSULmkH3slPKlRn7piwAIg4P4nMm4YKc6oKG9nbwIhALQWAXurBA%2FI1cr1AWakpjCR3F2OZs7f3m%2BZZbSciurgKt4BCJD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMMjIwNDczMTUyMzEwIgynk0xpM4EpesIl5NAqsgEtjOLW9y6JCsFQRy8bAN%2B0MI5li5RKRfSRqURySJlweNE3gNeEiSh15Kd2FUOgjYwP%2F1NTbYGJmLH5x3qF9WRuu15wK0XmihFJnxUScFmP1OeApwbq1fe61ATbf8AonYKh7o16J27wiOdzsHwsPO46e4Kgo19sbWKUPB8Eaw6JO5WBqRTAYeKXY%2BlGreirVNRxUiLvScjkKYwayPPm8UlTk97DLwn0TSVQZ9bS1U%2BCN7chMNnm%2BvUFOt8BQp21cJSpasvxI%2BBulSZq1jY0CrcWzzQOPpCZQBaagly5wZEpueX9FnUZ9ixzNwus3nD0gV53zJcIs0hG8LAUWZiPwaoP3pSKhHG%2FwC2ULAdbXCyxg8SqePa7OtocSIRb0TWSV9yoX%2Bb5qs%2B%2FOwtISYqCQQJkxYmVIFptk6OIbwh9MRDaU4bRnRjHhHWluBCDnjR2GgfLblvVxk7VOtkgSAPC%2FERC44Jslp3Rn1RVlR4XUJJhLirjHUGGTlX7r0MNlOuUYBp3e3a25gyiTSGSmmKkQ7XBD4A8D8OzoLVLrg%3D%3D&Signature=rkk9qNcFomhsed47HPnXROOc3TI%3D",
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/moogalm/67334de1fd81458887e4db941b66088e/report.txt?AWSAccessKeyId=ASIATGVJZKM3C3A2ZCCQ&Expires=1590688138&x-amz-security-token=IQoJb3JpZ2luX2VjEIH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCOueOeNHA0sX4Zik5CD4AYRIX85snqjtmj4tCFksYjWwIgBTWcWa9T25fzgepOWLAcL0AHJ4KF5UB8YtNITOrl0Hkq3gEI2v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwyMjA0NzMxNTIzMTAiDCszWzsETlgRzxlXnyqyAcGkwFIQGrY6TofByCAX5k7YwCatygdqh4O%2FIjMRdGSf%2FIJrMie0JiZYomNg20niCLjvncmHbEz6bfmgTbwbyfhpgLl6Z%2BFecdGaTISHtvFZIGtvyM0shBtozJKVTpIR2MKacRF9%2Bv8Ngo08i%2BP0c2QRVJ5U5wjOjXEzR66SL41JrY%2FHPJpwjW1g1NT%2BgMmVuU1W3DYD1ZGZxoVCWguIfTZiQRwxTysVGWHzENGRVk9pPvswgs%2B%2F9gU64AGVUuHGbxVgAyka4f6vJDyFLnQ1MNkPiA6JlhWnAbGYJabYJtf4Ptcj3gN6opX4JVf728dKXCDvQADwlsOubJY1pN5MQDEeyB71HH3gvp%2BN2%2BjfheLyEAfhn4ejVcswG1pMnfmqX6qkfPv%2FfHSAx645Oco%2FvzXsnzKtInZ9lupdAi4N8HL83EYIFjXL2y1jUhyVZ8lOrOJoay7N0CJpg610x0XtZYZUP%2Bm70ADTSjpktAA4TIHglM27GKTXnX8HgaqlndeCqzfcSn8xwMLwImfXxiJXDiNKjhk69FvgPMQTZg%3D%3D&Signature=WBoTBU1gBX%2FEYghx%2BfbXl%2F3G14s%3D",
   "stats": {
-    "timeQueued": "2020-05-15T17:21:04.2958746Z",
-    "timeDownloadStarted": "2020-05-15T17:21:04.588873Z",
-    "timeInstructionsStarted": "2020-05-15T17:21:06.6074066Z",
-    "timeInstructionsEnded": "2020-05-15T17:21:17.6019976Z",
-    "timeUploadEnded": "2020-05-15T17:21:17.602978Z",
-    "bytesDownloaded": 4810380
+    "timeQueued": "2020-05-28T16:47:17.751861Z",
+    "timeDownloadStarted": "2020-05-28T16:47:18.072306Z",
+    "timeInstructionsStarted": "2020-05-28T16:47:19.9606112Z",
+    "timeInstructionsEnded": "2020-05-28T16:47:30.2668621Z",
+    "timeUploadEnded": "2020-05-28T16:47:30.5565748Z",
+    "bytesDownloaded": 4810380,
+    "bytesUploaded": 1244153
   },
-  "id": "babe1312100e4ad3adf68811ace4b1e4"
+  "id": "67334de1fd81458887e4db941b66088e"
 }

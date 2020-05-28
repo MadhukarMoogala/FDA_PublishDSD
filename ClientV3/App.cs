@@ -239,7 +239,10 @@
                     PostBucketsSigned bucketsSigned = new PostBucketsSigned(60);
                     dynamic signedResp = await objectsApi.CreateSignedResourceAsync(BucketKey, inputFileNameOSS, bucketsSigned, "read");
                     DownloadUrl = signedResp.signedUrl;
-                    Console.WriteLine($"\tSuccess: signed resource created!\n\t{DownloadUrl}");
+                    signedResp = await objectsApi.CreateSignedResourceAsync(BucketKey, outputFileNameOSS, bucketsSigned, "readwrite");
+                    UploadUrl = signedResp.signedUrl; 
+                    Console.WriteLine($"\tSuccess: signed resource for input.zip created!\n\t{DownloadUrl}");
+                    Console.WriteLine($"\tSuccess: signed resource for result.pdf created!\n\t{UploadUrl}");
                 }
                 catch { }
 
@@ -265,26 +268,28 @@
         /// <returns>The <see cref="Task"/>.</returns>
         private async Task SubmitWorkItemAsync(string myActivity)
         {
-            Console.WriteLine("Submitting up workitem...");
-            dynamic oauth = await GetInternalAsync();
+            Console.WriteLine("Submitting up workitem...");            
             var workItemStatus = await api.CreateWorkItemAsync(new Autodesk.Forge.DesignAutomation.Model.WorkItem()
             {
                 ActivityId = myActivity,
-                Arguments = new Dictionary<string, IArgument>()
-                {
-                    { "inputFile", new XrefTreeArgument() { Url = "http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt" } },
-                    { "inputZip", new XrefTreeArgument() { Url =  DownloadUrl,Verb =Verb.Get,LocalName="export"} },
-
-                    { "Result", new XrefTreeArgument(){
-                      Verb=Verb.Put,
-                      Url = string.Format("https://developer.api.autodesk.com/oss/v2/buckets/{0}/objects/{1}",  Owner.ToLower(), outputFileNameOSS ),
-                      Headers = new Dictionary<string, string>()
-                      {
-                         { "Authorization", "Bearer " + oauth.access_token }
-                      }
-                    }
-                    }
-                }
+                Arguments = new Dictionary<string, IArgument>() {
+                              {
+                               "inputFile",
+                               new XrefTreeArgument() {
+                                Url = "http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt"
+                               }
+                              }, {
+                               "inputZip",
+                               new XrefTreeArgument() {
+                                Url = DownloadUrl, Verb = Verb.Get, LocalName = "export"
+                               }
+                              }, {
+                               "Result",
+                               new XrefTreeArgument() {
+                                Verb = Verb.Put, Url = UploadUrl
+                               }
+                              }
+                             }
             });
 
             Console.Write("\tPolling status");
@@ -301,8 +306,7 @@
                 Console.WriteLine($"{workItemStatus.Status} Please refer log {fname} further details.. exiting! ");
                 return;
             }
-            Console.WriteLine($"Downloaded {fname}.");          
-            UploadUrl = string.Format("https://developer.api.autodesk.com/oss/v2/buckets/{0}/objects/{1}", Owner.ToLower(), outputFileNameOSS);
+            Console.WriteLine($"Downloaded {fname}.");         
             var result = await DownloadToDocsAsync(UploadUrl, outputFileNameOSS, true);
             Console.WriteLine($"Downloaded {result}.");
         }

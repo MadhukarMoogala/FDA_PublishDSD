@@ -25,15 +25,6 @@
             Editor ed = Autodesk.AutoCAD.ApplicationServices.Core.Application.DocumentManager.MdiActiveDocument.Editor;
             ed.WriteMessage($"\n Current Directory {Directory.GetCurrentDirectory()}");
             rootDir = Path.Combine(Directory.GetCurrentDirectory(), "export");
-#if DEBUG
-            PromptFileNameResult prompt = ed.GetFileNameForOpen("\nEnter Zip Path:");
-            if(prompt.Status == PromptStatus.OK)
-            {
-                rootDir = prompt.StringResult;
-            }
-            
-#endif
-
             ed.WriteMessage($"\n Exported drawings are found here {rootDir}");
             Application.SetSystemVariable("PlotToFilePath", Path.Combine(rootDir, "result.pdf"));
             short bgPlot = (short)Application.GetSystemVariable("BACKGROUNDPLOT");
@@ -139,7 +130,7 @@
                 if (fi.Exists)
                 {
                     // Move file with a new name. Hence renamed.  
-                    fi.MoveTo(Path.Combine(rootDir, "result.pdf"));
+                    fi.MoveTo(Path.Combine(Directory.GetCurrentDirectory(), "result.pdf"));
                     break;
                 }
             }
