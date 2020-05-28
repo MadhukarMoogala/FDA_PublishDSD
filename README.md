@@ -10,10 +10,9 @@ Uses [Forge Design Automation V3](https://forge.autodesk.com/en/docs/design-auto
 
 ### Design Automation
 
-![NotWorkInDA](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/NotWorkingInAcCoreConsole.gif)
+![WorkInDA](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/BatchPublishingWorks.gif)
 
-### AcCore
-![WorkingInAcCore](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/WorkingInAcCoreConsole.gif)
+
 
 
 ### Prerequisites
@@ -31,7 +30,7 @@ cd BatchPublishCommand
 msbuild BatchPublishCommand.csproj -property:Configuration=Debug;Platform=x64
 ```
 
-### Instructions To Build .NET Core
+### Instructions To Build  and Test Forge DA Client
 
 ```bash
 cd BatchPublishCommand\client
