@@ -4,13 +4,17 @@
 [![Design-Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
 [![netCore](https://img.shields.io/badge/netcore-3.1-green)](https://dotnet.microsoft.com/download/dotnet-core/current/runtime)
 ### Description
-A CLI utility based on .NET Core technology to print a Revit generated multiple view drawings  in to a single pdf.
+A CLI utility based on .NET Core technology to print a multiple drawings in to a single pdf, the application logic in Bundle uses 
+
+[PublishExecute](https://help.autodesk.com/view/OARX/2021/ENU/?guid=OARX-ManagedRefGuide-Autodesk_AutoCAD_Publishing_Publisher_PublishExecute_DsdData_PlotConfig) API
+
+
 
 Uses [Forge Design Automation V3](https://forge.autodesk.com/en/docs/design-automation/v3)
 
 ### Design Automation
 
-![WorkInDA](https://git.autodesk.com/moogalm/da_publishdsd/blob/master/BatchPublishingWorks.gif)
+![WorkInDA](https://github.com/MadhukarMoogala/FDA_PublishDSD/blob/master/BatchPublishingWorks.gif)
 
 
 
@@ -94,6 +98,15 @@ launch ClientV3 profile.
 </Project>
 ```
 
+
+### Known Limitation
+If the layout does not have an initialized page setup in drawings, this app will not be able to process, an error `no plottable sheets found` is thrown, the reason could be the drawings are from older versions of AutoCAD or from third-party applications.
+
+### How to Fix:
+
+Open the file in AutoCAD and execute the PAGESETUP command on each layout to define it, which may simply entail modifying and then clicking OK, assuming the printer and other settings are correct.
+
+As an alternative, within the Publish window, click the Page Setup pop-up menu on one of the layouts and choose *Import*. If a named page setup has been defined in another file, and is usable for the desired publish, it can be imported and applied to all the layouts in the sheet list.
 
 
 
