@@ -4,7 +4,7 @@
 [![Design-Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
 [![netCore](https://img.shields.io/badge/netcore-3.1-green)](https://dotnet.microsoft.com/download/dotnet-core/current/runtime)
 ### Description
-A CLI utility based on .NET Core technology to print a multiple drawings in to a single pdf, the application logic in Bundle uses 
+A CLI utility based on .NET Core technology to print multiple drawings in to a single pdf, the application logic in Bundle uses 
 
 [PublishExecute](https://help.autodesk.com/view/OARX/2021/ENU/?guid=OARX-ManagedRefGuide-Autodesk_AutoCAD_Publishing_Publisher_PublishExecute_DsdData_PlotConfig) API
 
@@ -26,7 +26,7 @@ Uses [Forge Design Automation V3](https://forge.autodesk.com/en/docs/design-auto
 4. **7z** [7z Zip Archive](https://www.7-zip.org/download.html)
 5. Make sure `7z.exe` is available on your system path env.
 
-`git clone https://git.autodesk.com/moogalm/da_publishdsd.git`
+`git clone https://github.com/MadhukarMoogala/FDA_PublishDSD`
 
 ### Instructions To Build AutoCAD Addin
 ```bash
