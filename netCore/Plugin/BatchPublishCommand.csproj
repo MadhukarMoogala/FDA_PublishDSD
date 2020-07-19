@@ -112,7 +112,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy $(TargetPath) $(ProjectDir)Bundle\BatchPublish.bundle\Contents /y
-7z a -tzip $(SolutionDir)package.zip "$(ProjectDir)Bundle\*"</PostBuildEvent>
+7z a -tzip $(SolutionDir)package.zip "$(ProjectDir)Bundle\*" -xr!.gitkeep</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
