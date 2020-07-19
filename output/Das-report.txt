@@ -1,4 +1,4 @@
-[05/28/2020 16:47:18] Job information:
+[07/19/2020 16:54:53] Job information:
 "CommandLine":[
   "$(engine.path)\\accoreconsole.exe /i $(args[inputFile].path) /al $(appbundles[Adsk_BatchPublish_v3].path) /s $(settings[script].path)"
 ]
@@ -6,16 +6,16 @@
   "script": {
     "value": "BatchPublishCmd\n"
   },
-  "dasreportfailedlimits": {
+  "dasreportfaileduploadoptional": {
     "value": "true",
     "isEnvironmentVariable": true
   }
 }
-"Id":"67334de1fd81458887e4db941b66088e"
+"Id":"9442b41baf89419683695dc7dea8d322"
 "ActivityId":"moogalm.Adsk_BatchPublish_v3+prod"
-"Engine.Id":"Autodesk.AutoCAD!25"
+"Engine.Id":"Autodesk.AutoCAD!26"
 "Apps": [
-"App.Id":"moogalm.Adsk_BatchPublish_v3!19"
+"App.Id":"moogalm.Adsk_BatchPublish_v3!21"
 ]
 "BoundArguments":{
   "inputFile": {
@@ -25,11 +25,11 @@
   "inputZip": {
     "zip": true,
     "localName": "export",
-    "url": "https://developer.api.autodesk.com/Masked:mfTVil7tVTxuWd7hX7rBMZIhFnU="
+    "url": "https://developer.api.autodesk.com/Masked:PhpnxfOmGUNByIUgYhvh8fZjNJc="
   },
   "Result": {
     "localName": "result.pdf",
-    "url": "https://developer.api.autodesk.com/Masked:c3VEcis+kFNbCM9PKjJAIha+rK8=",
+    "url": "https://developer.api.autodesk.com/Masked:/kUChwbt0Crztga22+AXGWSzXLw=",
     "verb": "put"
   },
   "onProgress": {
@@ -38,188 +38,77 @@
     "headers": {
       "Content-Type": "application/json",
       "x-das-authorize": "awssigv4(us-east-1)",
-      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"},\"scope\":\"code:all\",\"expires_in\":3595,\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"}"
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"},\"scope\":\"code:all\",\"expires_in\":3589,\"client_id\":\"TahpeDJe69AxGGAnk4iBpBNvCJGuMskw\"}"
     },
     "verb": "put"
   }
 }
 "Quotas":{
-  "limitDownloads": 100,
-  "limitUploads": 100,
-  "limitDownloadSizeMB": 100,
-  "limitUploadSizeMB": 100,
   "limitProcessingTimeSec": 100,
   "limitTotalUncompressedAppsSizeInMB": 500
 }
-[05/28/2020 16:47:18] Starting work item 67334de1fd81458887e4db941b66088e
-[05/28/2020 16:47:18] Start download phase.
-[05/28/2020 16:47:18] Start downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt.
-[05/28/2020 16:47:18] Start downloading file https://developer.api.autodesk.com/oss/v2/signedresources/ebdaf238-d949-44af-ab33-bf13c21e1bf7?region=US.
-[05/28/2020 16:47:18] Start preparing AppPackage Adsk_BatchPublish_v3.
-[05/28/2020 16:47:18] Download bits and install app to local cache.
-[05/28/2020 16:47:18] End downloading file http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt. 31419 bytes have been written to T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt.
-[05/28/2020 16:47:18] End downloading https://developer.api.autodesk.com/oss/v2/signedresources/ebdaf238-d949-44af-ab33-bf13c21e1bf7?region=US. 4778961 bytes have been unpacked to folder T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export.
-[05/28/2020 16:47:18] End download phase.
-[05/28/2020 16:47:19] Start preparing script and command line parameters.
-[05/28/2020 16:47:19] Command line: [ /i T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt /al T:\Aces\Applications\646dad251f8a39cb9c7a0ab40f93b791.moogalm.Adsk_BatchPublish_v3[19].package /s T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\setting_script.scr]
-[05/28/2020 16:47:19] End preparing script and command line parameters.
-[05/28/2020 16:47:20] Start script phase.
-[05/28/2020 16:47:20] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_67334de1fd81458887e4db941b66088e "T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\userdata" /exe "T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\acad.dwt /al T:\Aces\Applications\646dad251f8a39cb9c7a0ab40f93b791.moogalm.Adsk_BatchPublish_v3[19].package /s T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\setting_script.scr.
-[05/28/2020 16:47:20] Start AutoCAD Core Engine standard output dump.
-[05/28/2020 16:47:20] Redirect stdout (file: T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\tmp\accc30282).
-[05/28/2020 16:47:20] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
-[05/28/2020 16:47:20] AutoCAD Core Engine Console - Copyright 2019 Autodesk, Inc.  All rights reserved. (Q.48.Z.11)
-[05/28/2020 16:47:20] Execution Path:
-[05/28/2020 16:47:20] T:\Aces\AcesRoot\23.1\coreEngine\Exe\accoreconsole.exe
-[05/28/2020 16:47:20] Current Directory: T:\Aces\Jobs\67334de1fd81458887e4db941b66088e
-[05/28/2020 16:47:20] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_67334de1fd81458887e4db941b66088e, userDataFolder=T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\userdata.
-[05/28/2020 16:47:20] Version Number: Q.48.Z.11 (UNICODE)
-[05/28/2020 16:47:21] Regenerating model.
-[05/28/2020 16:47:21] Command:
-[05/28/2020 16:47:21] Command:
-[05/28/2020 16:47:21] Command:
-[05/28/2020 16:47:21] Command: BatchPublishCmd
-[05/28/2020 16:47:21]  Current Directory T:\Aces\Jobs\67334de1fd81458887e4db941b66088e
-[05/28/2020 16:47:21]  Exported drawings are found here T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export
-[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A001-TitleSheet.dwg
-[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A101-SitePlan.dwg
-[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A102-Plans.dwg
-[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A103-Elevations-Sections.dwg
-[05/28/2020 16:47:21]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A104-Elev--Sec--Det-.dwg
-[05/28/2020 16:47:22] Regenerating layout.
-[05/28/2020 16:47:22] Regenerating model.
-[05/28/2020 16:47:23] Command:
-[05/28/2020 16:47:23] Command: Effective plotting area:  210.00 wide by 296.97 high
-[05/28/2020 16:47:23] Effective plotting area:  86.87 wide by 159.09 high
-[05/28/2020 16:47:23] Plotting viewport 2.
-[05/28/2020 16:47:23] Effective plotting area:  38.73 wide by 70.99 high
-[05/28/2020 16:47:23] Plotting viewport 3.
-[05/28/2020 16:47:23] Effective plotting area:  38.90 wide by 71.04 high
-[05/28/2020 16:47:23] Plotting viewport 4.
-[05/28/2020 16:47:23] Effective plotting area:  38.95 wide by 71.04 high
-[05/28/2020 16:47:23] Plotting viewport 5.
-[05/28/2020 16:47:23] Effective plotting area:  38.90 wide by 71.04 high
-[05/28/2020 16:47:23] Plotting viewport 6.
-[05/28/2020 16:47:23] Plotting viewport 1.
-[05/28/2020 16:47:23] Regenerating layout.
-[05/28/2020 16:47:23] Regenerating model.
-[05/28/2020 16:47:23] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:23] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:23] Plotting viewport 2.
-[05/28/2020 16:47:23] Plotting viewport 1.
-[05/28/2020 16:47:24] Regenerating layout.
-[05/28/2020 16:47:24] Regenerating model.
-[05/28/2020 16:47:24] Command:
-[05/28/2020 16:47:24] Command: Regenerating layout.
-[05/28/2020 16:47:24] Regenerating model.
-[05/28/2020 16:47:24] Effective plotting area:  210.00 wide by 281.26 high
-[05/28/2020 16:47:24] Effective plotting area:  154.52 wide by 159.64 high
-[05/28/2020 16:47:24] Plotting viewport 2.
-[05/28/2020 16:47:24] Effective plotting area:  95.17 wide by 140.33 high
-[05/28/2020 16:47:24] Plotting viewport 3.
-[05/28/2020 16:47:24] Plotting viewport 1.
-[05/28/2020 16:47:24] Regenerating layout.
-[05/28/2020 16:47:24] Regenerating model.
-[05/28/2020 16:47:24] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:24] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:24] Plotting viewport 2.
-[05/28/2020 16:47:25] Plotting viewport 1.
-[05/28/2020 16:47:25] Regenerating layout.
-[05/28/2020 16:47:25] Regenerating model.
-[05/28/2020 16:47:25] Command:
-[05/28/2020 16:47:25] Command: Regenerating layout.
-[05/28/2020 16:47:25] Regenerating model.
-[05/28/2020 16:47:25] Effective plotting area:  210.00 wide by 296.97 high
-[05/28/2020 16:47:25] Effective plotting area:  115.15 wide by 136.74 high
-[05/28/2020 16:47:25] Plotting viewport 2.
-[05/28/2020 16:47:25] Effective plotting area:  93.51 wide by 99.61 high
-[05/28/2020 16:47:25] Plotting viewport 3.
-[05/28/2020 16:47:25] Plotting viewport 1.
-[05/28/2020 16:47:25] Regenerating layout.
-[05/28/2020 16:47:25] Regenerating model.
-[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:26] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:26] Plotting viewport 2.
-[05/28/2020 16:47:26] Plotting viewport 1.
-[05/28/2020 16:47:26] Regenerating layout.
-[05/28/2020 16:47:26] Regenerating model.
-[05/28/2020 16:47:26] Command:
-[05/28/2020 16:47:26] Command: Regenerating layout.
-[05/28/2020 16:47:26] Regenerating model.
-[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 296.97 high
-[05/28/2020 16:47:26] Effective plotting area:  57.32 wide by 185.17 high
-[05/28/2020 16:47:26] Plotting viewport 2.
-[05/28/2020 16:47:26] Effective plotting area:  74.59 wide by 152.23 high
-[05/28/2020 16:47:26] Plotting viewport 3.
-[05/28/2020 16:47:26] Plotting viewport 1.
-[05/28/2020 16:47:26] Regenerating layout.
-[05/28/2020 16:47:26] Regenerating model.
-[05/28/2020 16:47:26] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:26] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:26] Plotting viewport 2.
-[05/28/2020 16:47:27] Plotting viewport 1.
-[05/28/2020 16:47:27] Regenerating layout.
-[05/28/2020 16:47:27] Regenerating model.
-[05/28/2020 16:47:27] Command:
-[05/28/2020 16:47:27] Command: Regenerating layout.
-[05/28/2020 16:47:27] Effective plotting area:  210.00 wide by 296.97 high
-[05/28/2020 16:47:27] Effective plotting area:  55.92 wide by 181.31 high
-[05/28/2020 16:47:27] Plotting viewport 2.
-[05/28/2020 16:47:27] Effective plotting area:  58.29 wide by 190.12 high
-[05/28/2020 16:47:27] Plotting viewport 3.
-[05/28/2020 16:47:27] Effective plotting area:  164.72 wide by 40.47 high
-[05/28/2020 16:47:27] Plotting viewport 4.
-[05/28/2020 16:47:27] Effective plotting area:  41.61 wide by 44.24 high
-[05/28/2020 16:47:27] Plotting viewport 5.
-[05/28/2020 16:47:27] Effective plotting area:  42.67 wide by 53.26 high
-[05/28/2020 16:47:27] Plotting viewport 6.
-[05/28/2020 16:47:27] Effective plotting area:  40.64 wide by 52.20 high
-[05/28/2020 16:47:27] Plotting viewport 7.
-[05/28/2020 16:47:27] Plotting viewport 1.
-[05/28/2020 16:47:27] Regenerating layout.
-[05/28/2020 16:47:27] Regenerating model.
-[05/28/2020 16:47:27] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:28] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:28] Plotting viewport 2.
-[05/28/2020 16:47:28] Plotting viewport 1.
-[05/28/2020 16:47:28] Regenerating layout.
-[05/28/2020 16:47:28] Regenerating model.
-[05/28/2020 16:47:28] Command:
-[05/28/2020 16:47:28] Command: Regenerating layout.
-[05/28/2020 16:47:28] Regenerating model.
-[05/28/2020 16:47:28] Effective plotting area:  210.00 wide by 296.97 high
-[05/28/2020 16:47:28] Effective plotting area:  104.27 wide by 88.82 high
-[05/28/2020 16:47:28] Plotting viewport 2.
-[05/28/2020 16:47:28] Effective plotting area:  51.90 wide by 162.73 high
-[05/28/2020 16:47:28] Plotting viewport 3.
-[05/28/2020 16:47:28] Effective plotting area:  95.88 wide by 146.39 high
-[05/28/2020 16:47:28] Plotting viewport 4.
-[05/28/2020 16:47:28] Plotting viewport 1.
-[05/28/2020 16:47:28] Regenerating layout.
-[05/28/2020 16:47:28] Regenerating model.
-[05/28/2020 16:47:28] Effective plotting area:  210.00 wide by 297.00 high
-[05/28/2020 16:47:28] Effective plotting area:  160.10 wide by 229.83 high
-[05/28/2020 16:47:28] Plotting viewport 2.
-[05/28/2020 16:47:29] Plotting viewport 1.
-[05/28/2020 16:47:29]  Drawing to be plotted T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\export\DA4R-Sheet-A105-Elev--StairSections.dwg
-[05/28/2020 16:47:30] End AutoCAD Core Engine standard output dump.
-[05/28/2020 16:47:30] End script phase.
-[05/28/2020 16:47:30] Start upload phase.
-[05/28/2020 16:47:30] Uploading T:\Aces\Jobs\67334de1fd81458887e4db941b66088e\result.pdf to https://developer.api.autodesk.com/oss/v2/signedresources/dbf09aee-75c6-46ef-861a-8c97732c994a?region=US.
-[05/28/2020 16:47:30] End upload phase.
-[05/28/2020 16:47:30] Job finished with result Succeeded
-[05/28/2020 16:47:30] Job Status:
+[07/19/2020 16:54:53] Starting work item 9442b41baf89419683695dc7dea8d322
+[07/19/2020 16:54:53] Start download phase.
+[07/19/2020 16:54:53] Start downloading input: verb - 'GET', url - 'http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt'
+[07/19/2020 16:54:53] Start downloading input: verb - 'GET', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/81bc1e49-ccfb-42c9-b3a3-10e9bf7b0038?region=US'
+[07/19/2020 16:54:53] '31419' bytes have been written to T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\acad.dwt.
+[07/19/2020 16:54:53] End downloading file 'http://download.autodesk.com/us/support/files/autocad_2015_templates/acad.dwt'.
+[07/19/2020 16:54:54] '2591847' bytes have been written to T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\zip_33.zip.
+[07/19/2020 16:54:54] End downloading file 'https://developer.api.autodesk.com/oss/v2/signedresources/81bc1e49-ccfb-42c9-b3a3-10e9bf7b0038?region=US'.
+[07/19/2020 16:54:54] T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\zip_33.zip has been unpacked to folder T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export.
+[07/19/2020 16:54:54] End download phase successfully.
+[07/19/2020 16:54:55] Start preparing script and command line parameters.
+[07/19/2020 16:54:55] Command line: [ /i T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\acad.dwt /al T:\Aces\Applications\441e62622c510a10689751626fa2b95c.moogalm.Adsk_BatchPublish_v3[21].package /s T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\setting_script.scr]
+[07/19/2020 16:54:55] End preparing script and command line parameters.
+[07/19/2020 16:54:55] Start script phase.
+[07/19/2020 16:54:55] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_9442b41baf89419683695dc7dea8d322 "T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\userdata" /exe "T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\acad.dwt /al T:\Aces\Applications\441e62622c510a10689751626fa2b95c.moogalm.Adsk_BatchPublish_v3[21].package /s T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\setting_script.scr.
+[07/19/2020 16:54:55] Start AutoCAD Core Engine standard output dump.
+[07/19/2020 16:54:55] Redirect stdout (file: T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\tmp\accc24162).
+[07/19/2020 16:54:55] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[07/19/2020 16:54:55] AutoCAD Core Engine Console - Copyright 2020 Autodesk, Inc.  All rights reserved. (R.47.Z.162)
+[07/19/2020 16:54:55] Execution Path:
+[07/19/2020 16:54:55] T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe
+[07/19/2020 16:54:55] Current Directory: T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322
+[07/19/2020 16:54:55] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_9442b41baf89419683695dc7dea8d322, userDataFolder=T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\userdata.
+[07/19/2020 16:54:56] Version Number: R.47.Z.162 (UNICODE)
+[07/19/2020 16:54:57] Regenerating model.
+[07/19/2020 16:54:57] AutoCAD menu utilities loaded.
+[07/19/2020 16:54:57] Command:
+[07/19/2020 16:54:57] Command:
+[07/19/2020 16:54:57] Command:
+[07/19/2020 16:54:57] Command: BatchPublishCmd
+[07/19/2020 16:54:58]  Current Directory T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322
+[07/19/2020 16:54:58]  Exported drawings are found here T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A001-TitleSheet.dwg
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A101-SitePlan.dwg
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A102-Plans.dwg
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A103-Elevations-Sections.dwg
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A104-Elev--Sec--Det-.dwg
+[07/19/2020 16:54:58]  Drawing to be plotted T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\export\DA4R-Sheet-A105-Elev--StairSections.dwg
+[07/19/2020 16:54:58] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:54:58] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:54:58] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:54:58] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:54:58] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:55:07] Layout2 is not initialized, so no plottable sheets in the current drawing
+[07/19/2020 16:55:08] End AutoCAD Core Engine standard output dump.
+[07/19/2020 16:55:08] End script phase.
+[07/19/2020 16:55:08] Start upload phase.
+[07/19/2020 16:55:08] Uploading 'T:\Aces\Jobs\9442b41baf89419683695dc7dea8d322\result.pdf': verb - 'PUT', url - 'https://developer.api.autodesk.com/oss/v2/signedresources/40bb9052-aaf6-40e0-8cfa-d09a2eacc33c?region=US'
+[07/19/2020 16:55:08] End upload phase successfully.
+[07/19/2020 16:55:08] Job finished with result Succeeded
+[07/19/2020 16:55:08] Job Status:
 {
   "status": "success",
-  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/moogalm/67334de1fd81458887e4db941b66088e/report.txt?AWSAccessKeyId=ASIATGVJZKM3C3A2ZCCQ&Expires=1590688138&x-amz-security-token=IQoJb3JpZ2luX2VjEIH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCOueOeNHA0sX4Zik5CD4AYRIX85snqjtmj4tCFksYjWwIgBTWcWa9T25fzgepOWLAcL0AHJ4KF5UB8YtNITOrl0Hkq3gEI2v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwyMjA0NzMxNTIzMTAiDCszWzsETlgRzxlXnyqyAcGkwFIQGrY6TofByCAX5k7YwCatygdqh4O%2FIjMRdGSf%2FIJrMie0JiZYomNg20niCLjvncmHbEz6bfmgTbwbyfhpgLl6Z%2BFecdGaTISHtvFZIGtvyM0shBtozJKVTpIR2MKacRF9%2Bv8Ngo08i%2BP0c2QRVJ5U5wjOjXEzR66SL41JrY%2FHPJpwjW1g1NT%2BgMmVuU1W3DYD1ZGZxoVCWguIfTZiQRwxTysVGWHzENGRVk9pPvswgs%2B%2F9gU64AGVUuHGbxVgAyka4f6vJDyFLnQ1MNkPiA6JlhWnAbGYJabYJtf4Ptcj3gN6opX4JVf728dKXCDvQADwlsOubJY1pN5MQDEeyB71HH3gvp%2BN2%2BjfheLyEAfhn4ejVcswG1pMnfmqX6qkfPv%2FfHSAx645Oco%2FvzXsnzKtInZ9lupdAi4N8HL83EYIFjXL2y1jUhyVZ8lOrOJoay7N0CJpg610x0XtZYZUP%2Bm70ADTSjpktAA4TIHglM27GKTXnX8HgaqlndeCqzfcSn8xwMLwImfXxiJXDiNKjhk69FvgPMQTZg%3D%3D&Signature=WBoTBU1gBX%2FEYghx%2BfbXl%2F3G14s%3D",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/moogalm/9442b41baf89419683695dc7dea8d322/report.txt?AWSAccessKeyId=ASIATGVJZKM3K3NRSOM3&Expires=1595181393&x-amz-security-token=IQoJb3JpZ2luX2VjEGEaCXVzLWVhc3QtMSJGMEQCIA5mOUHiHibjr6B%2F%2B%2BKwzOmyQdvrchhseksJvhF%2FFxzMAiB1C4en4jwKlTbsgHzRrqpq1QASTZiJuVS88Wp5lIk8IyrVAQgaEAIaDDIyMDQ3MzE1MjMxMCIMSJ%2FMXftb%2FkkU2PnjKrIBjYjvCBc8gUSqWD5I3t%2BWUzvTfz4joq4yJOEyZj1%2BhlK3WEqrrHTlSbMUxmPuh8k8BLqjIWdSQosRROrCNU7q4bdWlPFXuGLTwGfyX%2F6KnH6AxNJPJhkNKNZ3R%2B9WBkvViRLl%2Fubv4NLqSL0dkGkMSp0ohTfE0ES3prIrgBhjrVPYKXqWrNGIpdHr0VQMxZYI3O50mgFaFNve3J7S1kXhaWWTabs7s7L%2BZMkLmofS%2BBd3tDDw7tH4BTrhASnhf6WQA%2Bfxb2d3kPUWj1lE2q92BqjqqdCGOMdHvmoMsfcrq1Y8qnSjACVR6fSvMXL0FxiCVfXFkGDA6Mrs4g1pJ9yVXoNrx%2BT56ag2tbxmpxk9KDrWw4MoL1Ktf9MzYfjp9h7uOPvn1pHFd4IiZXHcsl0seij3hDUW40T9vcFwt5Gv47agUOjXjpeWZfmMCDfTaOKFaEGHRL9lEMwKpTHaDv%2B3QSrIctYCbQW6QgyUbl%2BB87fKwbrDgSg8m19iNwdtd%2BHsVHk92o9nVOtRrZt2z1RdTN%2BY6UmB5m%2FYXhKMQQ%3D%3D&Signature=s%2FVBkUYZEVXObYIMkK9%2FNFT9ix4%3D",
   "stats": {
-    "timeQueued": "2020-05-28T16:47:17.751861Z",
-    "timeDownloadStarted": "2020-05-28T16:47:18.072306Z",
-    "timeInstructionsStarted": "2020-05-28T16:47:19.9606112Z",
-    "timeInstructionsEnded": "2020-05-28T16:47:30.2668621Z",
-    "timeUploadEnded": "2020-05-28T16:47:30.5565748Z",
-    "bytesDownloaded": 4810380,
-    "bytesUploaded": 1244153
+    "timeQueued": "2020-07-19T16:54:53.4551435Z",
+    "timeDownloadStarted": "2020-07-19T16:54:53.6575268Z",
+    "timeInstructionsStarted": "2020-07-19T16:54:55.8093954Z",
+    "timeInstructionsEnded": "2020-07-19T16:55:08.4388829Z",
+    "timeUploadEnded": "2020-07-19T16:55:08.7016853Z",
+    "bytesDownloaded": 2623266,
+    "bytesUploaded": 1691096
   },
-  "id": "67334de1fd81458887e4db941b66088e"
+  "id": "9442b41baf89419683695dc7dea8d322"
 }
