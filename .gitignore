@@ -19,6 +19,8 @@
 *.userprefs
 
 forgenv.bat
+package.zip
+*.dll
 
 # Mono auto generated files
 mono_crash.*
