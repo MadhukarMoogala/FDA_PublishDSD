@@ -32,7 +32,7 @@
         /// <summary>
         /// Defines the BucketKey.
         /// </summary>
-        static readonly string BucketKey = "batchpublishworks";
+        static readonly string BucketKey = "batchpublishworks19042024";
 
         /// <summary>
         /// Defines the ActivityName.
@@ -42,7 +42,7 @@
         /// <summary>
         /// Defines the Owner.
         /// </summary>
-        static readonly string Owner = "moogalm";
+        static readonly string Owner = "batchworks";
 
         /// <summary>
         /// Defines the inputFileNameOSS.
@@ -72,7 +72,7 @@
         /// <summary>
         /// Defines the TargetEngine.
         /// </summary>
-        static readonly string TargetEngine = "Autodesk.AutoCAD+24";
+        static readonly string TargetEngine = "Autodesk.AutoCAD+24_3";
 
         /// <summary>
         /// Gets or sets the InternalToken.
@@ -330,7 +330,7 @@
                     },
                 CommandLine = new List<string>()
                     {
-                        $"$(engine.path)\\accoreconsole.exe /i $(args[inputFile].path) /al $(appbundles[{PackageName}].path) /s $(settings[script].path)"
+                        $"$(engine.path)\\accoreconsole.exe /i \"$(args[inputFile].path)\" /al \"$(appbundles[{PackageName}].path)\" /s \"$(settings[script].path)\""
                     },
                 Engine = TargetEngine,
                 Settings = new Dictionary<string, ISetting>()

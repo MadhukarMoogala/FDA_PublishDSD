@@ -31,7 +31,7 @@
             short bgPlot = (short)Application.GetSystemVariable("BACKGROUNDPLOT");
             Application.SetSystemVariable("BACKGROUNDPLOT", 0);
 
-            System.Collections.Generic.List<string> docsToPlot = new System.Collections.Generic.List<string>();
+            List<string> docsToPlot = new List<string>();
 
 
             foreach (var file in Directory.GetFiles(rootDir, "*.dwg"))
@@ -86,7 +86,7 @@
                                         Title = docName + "_" + layout.LayoutName
                                     };
                                     entry.NpsSourceDwg = entry.DwgName;
-                                    entry.Nps = "Setup1";
+                                    entry.Nps = "Setup1";                                  
                                     collection.Add(entry);
                                 }
                                 Tx.Commit();
@@ -101,6 +101,7 @@
 
                     dsdData.SheetType = SheetType.MultiPdf;
                     dsdData.ProjectPath = rootDir;
+                    dsdData.InitializeLayouts = true;
                     dsdData.SetDsdEntryCollection(collection);
                     string dsdFile = dsdData.ProjectPath + "\\dsdData.dsd";
                     dsdData.WriteDsd(dsdFile);
@@ -108,15 +109,15 @@
                     string str = sr.ReadToEnd();
                     sr.Close();
                     str = str.Replace("PromptForDwfName=TRUE", "PromptForDwfName=FALSE");
-                    string strToApped = "[PublishOptions]\nInitLayouts = TRUE";
-                    str += strToApped;
-                    System.IO.StreamWriter sw = new System.IO.StreamWriter(dsdFile);
+                    /*string strToApped = "[PublishOptions]\nInitLayouts = TRUE";
+                    str += strToApped;*/
+                    StreamWriter sw = new StreamWriter(dsdFile);
                     sw.Write(str);
                     sw.Close();
                     dsdData.ReadDsd(dsdFile);
-                    System.IO.File.Delete(dsdFile);
-                    PlotConfig plotConfig = Autodesk.AutoCAD.PlottingServices.PlotConfigManager.SetCurrentConfig("DWG To PDF.pc3");
-                    Autodesk.AutoCAD.Publishing.Publisher publisher = Autodesk.AutoCAD.ApplicationServices.Core.Application.Publisher;
+                    File.Delete(dsdFile);
+                    PlotConfig plotConfig = PlotConfigManager.SetCurrentConfig("DWG To PDF.pc3");
+                    Autodesk.AutoCAD.Publishing.Publisher publisher = Application.Publisher;
                     try
                     {
                         publisher.PublishExecute(dsdData, plotConfig);
@@ -132,7 +133,7 @@
             foreach (var file in Directory.GetFiles(rootDir, "*.pdf"))
             {
 
-                System.IO.FileInfo fi = new System.IO.FileInfo(file);
+                FileInfo fi = new FileInfo(file);
                 // Check if file is there  
                 if (fi.Exists)
                 {
@@ -150,7 +151,7 @@
         /// <returns>The <see cref="IEnumerable{ObjectId}"/>.</returns>
         private static IEnumerable<ObjectId> GeLayoutIds(Database db)
         {
-            System.Collections.Generic.List<ObjectId> layoutIds = new System.Collections.Generic.List<ObjectId>();
+            List<ObjectId> layoutIds = new List<ObjectId>();
             using (Transaction Tx = db.TransactionManager.StartTransaction())
             {
                 DBDictionary layoutDic = Tx.GetObject(db.LayoutDictionaryId, OpenMode.ForRead, false)
